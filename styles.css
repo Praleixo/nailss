@@ -606,7 +606,13 @@ select {
 .look-card::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(53, 18, 29, 0) 30%, rgba(53, 18, 29, 0.8) 100%);
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,0.78) 0%,
+      rgba(0,0,0,0.18) 45%,
+      rgba(0,0,0,0) 100%
+    );
   content: "";
 }
 
@@ -1417,6 +1423,71 @@ select {
   .floating-actions a::before {
     display: none;
   }
+}
+.look-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.look-card img {
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+/* overlay suave */
+.look-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  transition: background 0.5s ease;
+}
+
+/* texto acima da imagem */
+.look-card > div {
+  position: absolute;
+  z-index: 2;
+}
+
+/* hover premium */
+.look-card:hover img {
+  transform: scale(1.08);
+  filter: blur(1.5px) brightness(0.7);
+}
+
+.look-card:hover::before {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+/* animação do texto */
+.look-card h3,
+.look-card span {
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.look-card:hover h3,
+.look-card:hover span {
+  transform: translateY(-4px);
+}
+
+/* sombras mais elegantes */
+.look-card {
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.12);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.look-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.22);
 }
 
 @media (hover: none) {
