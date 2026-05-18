@@ -5,6 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node scripts/build.mjs",
     "start": "python -m http.server 4173",
     "dev": "python -m http.server 4173",
     "preview": "python -m http.server 4173"

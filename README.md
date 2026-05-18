@@ -1,6 +1,6 @@
 # Stefany Aleixo Unhas
 
-Site estático criado com HTML, CSS e JavaScript puro
+Site estatico criado com HTML, CSS e JavaScript puro, pronto para publicacao na Vercel com deploy automatico via GitHub.
 
 ## Estrutura
 
@@ -11,6 +11,8 @@ nailss/
 ├── vercel.json
 ├── README.md
 ├── .gitignore
+├── scripts/
+│   └── build.mjs
 ├── assets/
 │   ├── css/
 │   │   └── style.css
@@ -23,11 +25,12 @@ nailss/
 
 ## Arquivos principais
 
-- `index.html`: página principal, meta tags SEO, Open Graph, favicon e links dos assets.
-- `package.json`: metadados do projeto e scripts locais, sem dependências de framework.
+- `index.html`: pagina principal, meta tags SEO, Open Graph, favicon e links dos assets.
+- `package.json`: metadados do projeto e scripts locais, sem dependencias de framework.
+- `scripts/build.mjs`: gera a pasta `dist/` usada no deploy da Vercel.
 - `assets/css/style.css`: estilos responsivos para desktop e mobile.
-- `assets/js/script.js`: menu mobile, animações, galeria e formulário.
+- `assets/js/script.js`: menu mobile, animacoes, galeria e formulario.
 - `assets/img/`: imagens do site.
-- `assets/icons/`: favicon e ícones do projeto.
-- `public/`: pasta reservada para arquivos públicos extras.
-- `vercel.json`: configuração de cache, rotas e headers para deploy estático.
+- `assets/icons/`: favicon e icones do projeto.
+- `public/`: pasta reservada para arquivos publicos extras.
+- `vercel.json`: configuracao de build, cache, rotas e headers para deploy estatico.
