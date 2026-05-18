@@ -1,0 +1,21 @@
+{
+  "name": "nailss",
+  "version": "1.0.0",
+  "description": "Site estatico da Stefany Aleixo Unhas feito com HTML, CSS e JavaScript puro.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 4173",
+    "dev": "python -m http.server 4173",
+    "preview": "python -m http.server 4173"
+  },
+  "keywords": [
+    "site-estatico",
+    "html",
+    "css",
+    "javascript",
+    "vercel"
+  ],
+  "author": "Stefany Aleixo Unhas",
+  "license": "UNLICENSED"
+}

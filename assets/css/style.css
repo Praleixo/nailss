@@ -161,7 +161,7 @@ select {
 }
 
 .hero-media {
-  background-image: url("assets/portfolio-02.jpg");
+  background-image: url("../img/portfolio-02.jpg");
   background-position: center 48%;
   background-size: cover;
   transform: scale(1.02);
@@ -577,6 +577,11 @@ select {
   border-radius: var(--radius);
   object-fit: cover;
   box-shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+}
+
+.instagram-gallery-prev,
+.instagram-gallery-next {
+  display: none;
 }
 
 .look-card {
@@ -1334,6 +1339,7 @@ select {
   .look-card-large {
     min-height: 310px;
   }
+}
 
 @media (max-width: 920px) {
   .instagram-gallery-wrapper {
@@ -1399,6 +1405,7 @@ select {
   }
 }
 
+@media (max-width: 640px) {
   .site-footer {
     display: grid;
     padding-bottom: 86px;
